@@ -1,0 +1,160 @@
+{
+  "config": {
+    "appName": "Prayas One Professional Hub",
+    "logoUrl": "https://iili.io/CKMOrGI.md.png",
+    "studentGreeting": "Hi, Aspirant!",
+    "studentSubGreeting": "PRAYAS ONE PROFESSIONAL HUB",
+    "sliders": [
+      {
+        "id": "slide1",
+        "image": "https://i.ibb.co/0pkQqKpR/file-00000000d29871fa9f8307417b32910e.png",
+        "title": "Elevate your Preparations",
+        "link": "#",
+        "scheduledAt": "2026-06-01T00:00"
+      },
+      {
+        "id": "slide2",
+        "image": "https://i.ibb.co/3m15ZM6k/file-00000000f5907209bc522b1e82d51450.png",
+        "title": "Real-time Mock Examinations",
+        "link": "#",
+        "scheduledAt": "2026-06-01T00:00"
+      }
+    ],
+    "notifications": [
+      {
+        "id": "notif1",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=400",
+        "title": "ðŸ”¥ Daily Practice Series Live",
+        "message": "Check out the newly uploaded mock exams to refine your concept formulas today! Unlock with voucher code series.",
+        "buttonName": "EXPLORE",
+        "link": "#",
+        "scheduledAt": "2026-06-01T00:00"
+      }
+    ],
+    "testCategories": [
+      {
+        "id": "cat_mech",
+        "name": "Competitive Sciences",
+        "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=200",
+        "subCategories": [
+          {
+            "id": "sub_phys",
+            "name": "Physics Physics Unit",
+            "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=200",
+            "test": null,
+            "pdf": null,
+            "topics": [
+              {
+                "id": "top_force",
+                "name": "Centrifugal Force Mechanics",
+                "test": {
+                  "id": "test_force_mcq",
+                  "title": "Centrifugal Force Standard Test",
+                  "questionsEn": [
+                    {
+                      "q": "What is the standard unit of force in SI units?",
+                      "o": ["Joule", "Pascal", "Newton", "Watt"],
+                      "c": 3,
+                      "s": "F = ma, which is calculated in Newtons in international systems."
+                    },
+                    {
+                      "q": "Centrifugal force is mathematically described as...",
+                      "o": ["mv^2/r", "mvr", "1/2 mv^2", "mgh"],
+                      "c": 1,
+                      "s": "Expression for centrifugal force is Fc = mv^2 / r."
+                    }
+                  ],
+                  "questionsHi": [],
+                  "duration": 20,
+                  "freeAttempts": 2,
+                  "unlimitedAttempts": false,
+                  "onlyUsers": "",
+                  "coupon": {
+                    "code": "VIPCOUPON",
+                    "startDate": "2026-06-01",
+                    "endDate": "2026-12-31",
+                    "maxAttempts": "unlimited"
+                  },
+                  "posMarks": 2,
+                  "negMarks": 0.5,
+                  "instructions": "Attempt all questions. Watch negative points."
+                },
+                "pdf": null
+              }
+            ]
+          }
+        ],
+        "test": null,
+        "pdf": null
+      }
+    ],
+    "pdfCategories": [
+      {
+        "id": "cat_pdf_1",
+        "name": "Daily General Knowledge Catalogs",
+        "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=200",
+        "subCategories": [
+          {
+            "id": "sub_pdf_sub1",
+            "name": "Current Affairs 2026",
+            "image": "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?q=80&w=200",
+            "test": null,
+            "pdf": null,
+            "topics": [
+              {
+                "id": "top_pdf_doc1",
+                "name": "Economic Policy Highlights (PDF)",
+                "test": null,
+                "pdf": {
+                  "id": "pdf_doc_eco",
+                  "title": "Economic Policy Highlights",
+                  "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                }
+              }
+            ]
+          }
+        ],
+        "test": null,
+        "pdf": null
+      }
+    ],
+    "students": [],
+    "social": {
+      "whatsapp": "https://wa.me/910000000000",
+      "telegram": "https://t.me/prayasone",
+      "paymentQr": "https://api.qrserver.com/v1/create-qr-code/?size=350x350&data=UPI_PAYMENT_PAY@okaxis",
+      "paymentAmount": "â‚¹499",
+      "customLinks": []
+    }
+  },
+  "students": [
+    {
+      "id": "stu1",
+      "name": "Saurabh Mishra",
+      "emailOrMobile": "good4xo@gmail.com",
+      "password": "admin",
+      "purchaseDate": "2026-06-01",
+      "expiryDate": "2026-12-31"
+    }
+  ],
+  "analytics": {
+    "good4xo@gmail.com": {
+      "totalTestsAttempted": 1,
+      "bestScore": 4.00,
+      "averageScore": 4.00,
+      "highestRank": 1,
+      "totalTimeSpent": 125,
+      "lastActivityDate": "2026-06-06"
+    }
+  },
+  "leaderboards": {},
+  "logs": [
+    {
+      "id": "log_init",
+      "action": "Server seeding initialized secure database configuration",
+      "date": "2026-06-06",
+      "time": "08:44",
+      "adminName": "System Admin"
+    }
+  ]
+}
