@@ -1,0 +1,6 @@
+{
+  "name": "Prayas One Ultimate Builder",
+  "description": "An elite coaching industry application builder to configure and generate high-performance student applications with custom tests, PDFs, user management, notifications, and an intuitive exam engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
