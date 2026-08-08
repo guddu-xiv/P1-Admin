@@ -1,0 +1,48 @@
+# ==============================================================================
+# HTACCESS FOR HOSTINGER / APACHE / LITESPEED - REACT VITE SPA
+# ==============================================================================
+
+# Disable directory browsing
+Options -Indexes
+
+# 1. ALLOW SPA ROUTING (React Router / Vite)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Fallback for LiteSpeed/Apache if mod_rewrite behaves differently
+<IfModule !mod_rewrite.c>
+  FallbackResource /index.html
+</IfModule>
+
+# 2. MIME TYPES & CHARACTER SET
+<IfModule mod_mime.c>
+  AddType text/plain .txt
+  AddType application/json .json
+  AddType application/javascript .js
+  AddType text/css .css
+</IfModule>
+AddDefaultCharset UTF-8
+
+# 3. CORS HEADERS & CACHE CONTROL
+<IfModule mod_headers.c>
+  # Allow CORS for static assets & API calls
+  <FilesMatch "\.(txt|json|svg|png|jpg|jpeg|js|css|woff2?)$">
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+  </FilesMatch>
+
+  # Prevent caching for dynamic data files
+  <FilesMatch "\.(txt|json)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+</IfModule>
+
